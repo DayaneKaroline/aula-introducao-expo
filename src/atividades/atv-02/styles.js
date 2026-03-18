@@ -4,30 +4,29 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1, // container ocupa 100% da tela
-        backgroundColor: '#fafafa', // cor do container
-        borderRadius: 10, // borda curvada
-        padding: 8, 
-        alignItems: 'center', // alinhamento horizontal - flexDirection collumn
+        flex: 1,
+        backgroundColor: 'rgb(171, 241, 241)',
+        alignItems: 'center',
+        // justifyContent: 'center',
+        borderColor: 'white',
+        borderWidth: 2,
+        width: '100%',
+        height: '100%',
+        borderRadius: RFPercentage(1.5),
     }, 
     titulo: {
-        fontSize: RFPercentage(4), // tamanho da fonte
-        fontWeight: 'bold', 
-        borderWidth: 3, // expessura da borda
-        marginTop: 20, // margem acima do elemento
-        marginBottom: 20, // margem abaixo do elemento
-        paddingVertical: 10, // espaço interno
-        width: '100%', // largura do objeto
-        textAlign: 'center', // alinhamento horizontal do texto no container
-        textAlignVertical: 'center', // alinhamento vertical do texto no container
-        color: 'darkslategrey', // cor do texto 
-        borderColor: 'darkslategrey', // cor da borda 
-        borderRadius: 20, // arrendondar borda
+        fontSize: RFPercentage(4),
+        fontWeight: 'bold',
+        color: 'darkslategrey',
+        marginBottom: 16,
+        borderRadius: RFPercentage(1.5),
+        borderColor: 'black',
+
     }, 
     imagem: {
-        // height: RFPercentage(16), 
+        height: RFPercentage(16), 
         // width: RFPercentage(48),  
-        width: '90%', 
+        width: '25%', 
         resizeMode: 'contain', 
         // filter: 'grayscale(80%)', 
         // filter: 'sepia(80%)', 
@@ -36,6 +35,12 @@ const styles = StyleSheet.create({
         // filter: 'contrast(50%)', 
         // filter: 'invert(100%)', 
     }, 
+    texto: {
+        fontSize: RFPercentage(2.5),
+        color: 'white',
+        textAlign: 'center',
+        marginTop: 16,
+    },
 });
 
 export default styles;

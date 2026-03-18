@@ -10,7 +10,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Atividade02 />
-      <StatusBar style="auto" />
+      <StatusBar style="light"/>
     </View>
   );
 }
@@ -18,7 +18,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgb(202, 50, 177)',
+    backgroundColor: 'rgb(237, 178, 249)',
     padding: 16,
     // alignItems: 'center',
     // justifyContent: 'center',
