@@ -13,14 +13,13 @@ const styles = StyleSheet.create({
     titulo: {
         fontSize: RFPercentage(4),// tamanho da fonte responsivo
         fontWeight: 'bold',
-        borderWidth: 3, //espessura da borda
+        //borderWidth: 3, //espessura da borda
         marginTop:20,
-        color: 'darkslategrey',
+        color: '#9f2dd8',
         marginBottom: 20,
         paddingVertical: 10, //espaçamento vertical
         paddingHorizontal: 20, //espaçamento horizontal
         borderRadius: RFPercentage(1.5),
-        borderColor: 'black',
         textAlign: 'center',
         textAlignVertical: 'center',
 

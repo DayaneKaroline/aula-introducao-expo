@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        borderWidth: RFPercentage(0.5), 
-        borderColor: 'darkslategrey', 
+        borderWidth: RFPercentage(0.2), 
+        borderColor: '#cd41f8', 
         padding: RFPercentage(1.5), 
         borderRadius: RFPercentage(1.5), 
         width: '90%', 
