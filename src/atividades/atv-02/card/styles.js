@@ -12,21 +12,29 @@ const styles = StyleSheet.create({
         borderRadius: RFPercentage(1.5), 
         width: '90%', 
         alignItems: 'center', 
-        marginBottom: RFPercentage(1), 
+        marginBottom: RFPercentage(0.5), 
     }, 
     titulo: {
-        fontSize: RFPercentage(3.3), 
+        fontSize: RFPercentage(2), 
         fontWeight: 'bold', 
         color: 'darkslategrey', 
+        textAlign: 'center',
     }, 
-    mensagem: {
-        fontSize: RFPercentage(2), 
-        color: '#222',
+    descricao: {
+        fontSize: RFPercentage(1.5), 
+        color: '#555', 
+        textAlign: 'center',
     },
-        imagem: {
+    preco: {
+        fontSize: RFPercentage(1.5), 
+        fontWeight: 'bold',
+        color: 'black',
+        textAlign: 'center',
+    },
+    imagem: {
         height: RFPercentage(16), 
-        width: RFPercentage(10),  
-         width: '30%', 
+        width: RFPercentage(48),  
+        width: '25%', 
         resizeMode: 'contain', 
         // filter: 'grayscale(80%)', 
         // filter: 'sepia(80%)', 
@@ -35,7 +43,10 @@ const styles = StyleSheet.create({
         // filter: 'contrast(50%)', 
         // filter: 'invert(100%)', 
     },  
-    container
+    textContainer: {
+        flex: 1, 
+        marginLeft: RFPercentage(2), 
+    },
 });
 
 export default styles;
