@@ -7,14 +7,14 @@ import Exemplo03 from './src/exemplos/ex-03';
 
 import Atividade01 from './src/atividades/atv-01';
 import Atividade02 from './src/atividades/atv-02';
-//import Atividade03 from './src/atividades/atv-03';
+import Atividade03 from './src/atividades/atv-03';
 
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo03 />
+      <Atividade03 />
       <StatusBar style="light"/>
     </View>
   );
