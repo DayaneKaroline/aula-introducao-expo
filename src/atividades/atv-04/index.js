@@ -5,9 +5,9 @@ import styles from "./styles";
 
 export default function Atividade04() {
 
-    const [txt1, setTexto] = useState('');
-    const [txt2, setTxt2] = useState('Valor inicial'); 
-    const [mensagem, setMensagem] = useState('');   
+    const [txt1, setTexto] = useState (' ');
+    const [txt2, setTxt2] = useState(' '); 
+    const [mensagem, setMensagem] = useState(' ');   
 
     function handleExibeMensagem() {
         setMensagem(txt2);

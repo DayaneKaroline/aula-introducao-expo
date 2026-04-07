@@ -18,10 +18,10 @@ const styles = StyleSheet.create(
             fontSize: RFPercentage(2.5),
         },
         input: {
-            borderWidth: RFPercentage(0.5),
+            borderWidth: RFPercentage(0.25),
             borderColor: '#b2f9f9',
             width: '80%',
-            borderRadius: RFPercentage(0.5),
+            borderRadius: RFPercentage(1.5),
             padding: RFPercentage(1.5),
             fontSize: RFPercentage(2),
             textAlign: 'center',
