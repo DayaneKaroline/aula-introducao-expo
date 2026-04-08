@@ -12,10 +12,11 @@ const styles = StyleSheet.create(
             fontSize: RFPercentage(5),
             fontWeight: 'bold', 
             color: '#040106',
-            margin: RFPercentage(5),
+            margin: RFPercentage(2),
         },
         txt: {  
             fontSize: RFPercentage(2.5),
+            marginBottom: RFPercentage(2),
         },
         input: {
             borderWidth: RFPercentage(0.25),
@@ -25,6 +26,7 @@ const styles = StyleSheet.create(
             padding: RFPercentage(1.5),
             fontSize: RFPercentage(2),
             textAlign: 'center',
+            marginBottom: RFPercentage(2),
         },
         botao: {
             backgroundColor: '#48dff7',

@@ -5,43 +5,43 @@ import styles from "./styles";
 
 export default function Atividade04() {
 
-    const [txt1, setTexto] = useState (' ');
-    const [txt2, setTxt2] = useState(' '); 
-    const [mensagem, setMensagem] = useState(' ');   
+    const [nome, setNome] = useState ('');
+    const [sobrenome, setSobrenome] = useState(''); 
+    const [nomeCompleto, setNomeCompleto] = useState(' ');   
 
-    function handleExibeMensagem() {
-        setMensagem(txt2);
-        setTxt2('');
+    function handleExibeNome() {
+        setNomeCompleto(`${nome} ${sobrenome}`);
+        setNome('');
+        setSobrenome('');
     }   
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Atividade 4</Text>  
 
-            <Text style={styles.txt}>{txt1}</Text>
+            <Text style={styles.txt}>{nomeCompleto}</Text>
 
             <TextInput
-                onChangeText={setTexto}
+                onChangeText={setNome}
+                value={nome}
                 placeholder='Nome'
-                keyboardType='ascii-capable'
-                maxLength={7}
+                maxLength={10}
                 style={styles.input}
             />
 
-            <Text style={styles.txt}>{mensagem}</Text>
+          
             <TextInput
-                value={txt2}
-                onChangeText={setTxt2}
+                onChangeText={setSobrenome}
+                value={sobrenome}
                 placeholder='Sobrenome'
-                keyboardType='ascii-capable'
                 style={styles.input}
             />
 
             <TouchableOpacity 
             style={styles.botao} 
-            onPress={() => handleExibeMensagem()}
+            onPress={() => handleExibeNome()}
             >
 
-                <Text style={styles.txtBotao}>Nome Completo</Text>
+            <Text style={styles.txtBotao}> Exibir Nome Completo</Text>
             </TouchableOpacity>
 
      
