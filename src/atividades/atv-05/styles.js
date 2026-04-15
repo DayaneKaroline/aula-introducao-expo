@@ -35,13 +35,14 @@ const styles = StyleSheet.create({
         padding: RFValue(10)
         
     },
-    Button: {
+    button: {
         backgroundColor: '#73cee0',
-        height: RFValue(56),
+        height: RFValue(50),
         justifyContent: 'center',
+        alignItems: 'center',
         borderRadius: RFValue(10),
         marginTop: RFValue(20),
-        width: '100%',
+        width: RFValue(80),
     },
     buttonTouch: {
         backgroundColor: '#e99cf2',
@@ -54,7 +55,8 @@ const styles = StyleSheet.create({
     textLabel: {
         fontSize: RFValue(20),
         color: '#450743',
-        textAlign: 'center',
+        //textAlign: 'center',
+       fontWeight: 'bold',
     },
     txtTotal: {
         color: '#450743',

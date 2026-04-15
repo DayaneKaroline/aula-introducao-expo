@@ -17,6 +17,18 @@ export default function Atividade05() {
         setTotal(parseFloat(n1) + parseFloat(n2));
     }
 
+     function subtrair() {
+        setTotal(parseFloat(n1) - parseFloat(n2));
+    }
+
+     function dividir() {
+        setTotal(parseFloat(n1) / parseFloat(n2));
+    }
+
+     function multiplicar() {
+        setTotal(parseFloat(n1) * parseFloat(n2));
+    }
+
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}> Atividade 5 </Text>
@@ -87,21 +99,75 @@ export default function Atividade05() {
                 onFocus={() => setIsFocusTotal(true)}
                 onBlur={() => setIsFocusTotal(false)}
                 readOnly={true}
-                value={total ? parseFloat(total).toString() : '0.00'}
+                value={total ? parseFloat(total).toFixed(2) : '0.00'}
             />
 
-            <Pressable
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+                <Pressable
                 onPress={() => soma()}
                 style={
                     ({ pressed }) => pressed ?
                     [styles.button, styles.buttonTouch]
                     :
-                    [styles.button]
+                    styles.button
                 }
             >
-                <Text style={styles.txtButton}> + </Text>
+                <Text style={styles.textButton}> + </Text>
             </Pressable>
 
+            <Pressable
+                onPress={() => subtrair()}
+                style={
+                    ({ pressed }) => pressed ?
+                    [styles.button, styles.buttonTouch]
+                    :
+                    styles.button
+                }
+            >
+                <Text style={styles.textButton}> - </Text>
+            </Pressable>
+
+             <Pressable
+                onPress={() => dividir()}
+                style={
+                    ({ pressed }) => pressed ?
+                    [styles.button, styles.buttonTouch]
+                    :
+                    styles.button
+                }
+            >
+                <Text style={styles.textButton}> / </Text>
+            </Pressable>
+
+             <Pressable
+                onPress={() => multiplicar()}
+                style={
+                    ({ pressed }) => pressed ?
+                    [styles.button, styles.buttonTouch]
+                    :
+                    styles.button
+                }
+            >
+                <Text style={styles.textButton}> * </Text>
+            </Pressable>
         </View>
+              
+              <Pressable
+              onPress= {() =>{
+                setN1(0);
+                setN2(0);
+                setTotal(0);
+              }}
+                style={
+                    ({ pressed }) => pressed ?
+                    [styles.button, styles.buttonTouch]
+                    :  
+                    styles.button
+                }
+            >
+                <Text style={styles.textButton}> Limpar </Text>
+            </Pressable>
+        
+    </View>
     );
 }

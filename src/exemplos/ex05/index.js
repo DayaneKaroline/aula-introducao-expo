@@ -19,7 +19,7 @@ export default function Exemplo05() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}> Exemplo 5 </Text>
+            <Text style={styles.titulo}> Exemplo05 </Text>
 
             <Text style={styles.txtSaida}> Calculadora básica </Text>
 
@@ -52,6 +52,7 @@ export default function Exemplo05() {
                 style={
                     [
                         styles.txtEntrada,
+                        styles.txtTotal,
                         isFocusN2 ?
                             {
                                 borderColor: 'deepskyblue',
