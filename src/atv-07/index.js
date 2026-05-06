@@ -6,7 +6,7 @@ import Display from "./display";
 
 import styles from "./styles";
 
-export default function Atividade7() {
+export default function Atividade07() {
 
     const [displayValue, setDisplayValue] = useState('0');
     const [clearDisplay, setClearDisplay] = useState(false);
@@ -33,7 +33,7 @@ export default function Atividade7() {
 
         if (n !== '.') {
             const novoValor = parseFloat(valorAtualizar);
-            const atualizaValor = [...values];
+            const atualizaValor = values;
             atualizaValor[current] = novoValor;
             setValues(atualizaValor);
         }
@@ -62,7 +62,7 @@ export default function Atividade7() {
                 setOperation(operacao);
             }
 
-            const valores = [...values];
+            const valores = values;
 
             // valores[0] = eval(valores[0] + operation + valores[1]);
             valores[0] = calculo (valores[0], valores[1], operation);
