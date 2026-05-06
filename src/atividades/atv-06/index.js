@@ -41,6 +41,50 @@ export default function Atividade06() {
 
     }
 
+      // resolução 1
+        if (imc < 18.5) {
+            mensagem = 'Abaixo do peso';
+        } else if (imc < 25) {
+            mensagem = 'Peso normal';
+        } else if (imc < 30) {
+            mensagem = 'Sobrepeso';
+        } else if (imc < 35) {
+            mensagem = 'Obsedidade grau I';
+        } else if (imc < 40) {
+            mensagem = 'Obsedidade grau II';
+        } else {
+            mensagem = 'Obsedidade grau III';
+        }
+
+
+        // resolução 2
+        if (imc < 18.5) {
+            mensagem = 'Abaixo do peso';
+        }
+
+        if (imc >= 18.5 && im < 25) {
+            mensagem = 'Peso normal';
+        }
+
+        if (imc >= 25 && imc < 30) {
+            mensagem = 'Sobrepeso';
+        }
+
+        if (imc >= 30 && imc < 35) {
+            mensagem = 'Obsedidade grau I';
+        }
+
+        if (imc >= 35 && imc < 40) {
+            mensagem = 'Obsedidade grau II';
+        }
+
+        if (imc >= 40) {
+            mensagem = 'Obsedidade grau III';
+        }
+
+        setMensImc(mensagem);
+    }
+
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Atividade06</Text>
